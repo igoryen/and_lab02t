@@ -20,7 +20,9 @@ public class FirstActivity extends Activity {
 
         // Create an Intent 
         final Intent myIntent = new Intent(this, SecondActivity.class);
-
+        
+        myIntent.putExtra("toast_string", "Hello from activity1");
+        
         // Set up a button event handler that activates SecondActivity
         // by using an anonymous class 
         b1.setOnClickListener(new View.OnClickListener() {
